@@ -1,0 +1,27 @@
+.authentication__input-text {
+    width: 100%;
+    padding: 0 0 9px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffff;
+    outline: none;
+}
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#CCCCCC;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#CCCCCC;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#CCCCCC;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#CCCCCC;
+}

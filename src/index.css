@@ -76,7 +76,14 @@
 @import url('./blocks/popup/__error/_visible/popup__error_visible.css');
 
 
-
+/*_____________authentication______________*/
+@import url('./blocks/authentication/authentication.css');
+@import url('./blocks/authentication/__title/authentication__title.css');
+@import url('./blocks/authentication/__submit-btn/authentication__submit-btn.css');
+@import url('./blocks/authentication/__input-text/authentication__input-text.css');
+@import url('./blocks/authentication/__caption/authentication__caption.css');
+@import url('./blocks/authentication/__form/authentication__form.css');
+@import url('./blocks/authentication/__error/authentication__error.css');
 
 
 
