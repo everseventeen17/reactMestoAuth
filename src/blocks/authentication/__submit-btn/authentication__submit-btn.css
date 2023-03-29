@@ -8,8 +8,12 @@
     font-size: 18px;
     line-height: 22px;
     margin: 184px 0 0 0;
+    transition: 0.2s ease;
 }
 
+.authentication__submit-btn:hover {
+    opacity: 0.85;
+}
 
 
 @media screen and (max-width: 400px) {

@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f14eee99-6359-48a4-876b-4a55e8ea81d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/authentication/__input-text/authentication__input-text.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/authentication/__input-text/authentication__input-text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/authentication/__submit-btn/authentication__submit-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/authentication/__submit-btn/authentication__submit-btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/__logo/header__logo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +32,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="2NVPHdZpaCUOWDXJEf6rjKnqjlI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -43,6 +57,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PuSsY_DeStRoYeR_1337\Desktop\webPractics\YandexPracticum\mesto-react 7sprint\react-mesto\mesto-react 12\src\blocks\popup\__title" />
+      <recent name="C:\Users\PuSsY_DeStRoYeR_1337\Desktop\webPractics\YandexPracticum\mesto-react 7sprint\react-mesto\mesto-react 12\src\blocks\header\__authentication" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +73,9 @@
       <updated>1679746206737</updated>
       <workItem from="1679746214864" duration="598000" />
       <workItem from="1679747554091" duration="7924000" />
+      <workItem from="1679989536103" duration="5383000" />
+      <workItem from="1680013294793" duration="9066000" />
+      <workItem from="1680072691308" duration="3794000" />
     </task>
     <servers />
   </component>
