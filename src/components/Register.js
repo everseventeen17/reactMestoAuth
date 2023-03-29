@@ -25,11 +25,11 @@ export function Register ({handleRegistration}) {
             name="registration" method="post" onSubmit={handleSubmit}>
 
                 <input className="authentication__input-text authentication__input-text_email"
-                       onChange={handleInputEmail} name="email" placeholder="Email" required></input>
+                       onChange={handleInputEmail} value={email || ''} name="email" placeholder="Email" required></input>
                 <span className="authentication__error authentication__error_email">11</span>
 
                 <input className="authentication__input-text authentication__input-text_password" autoComplete="off"
-                       onChange={handleInputPassword} name="password" type="password" placeholder="Пароль" required></input>
+                       onChange={handleInputPassword} value={password || ''} name="password" type="password" placeholder="Пароль" required></input>
                 <span className="authentication__error authentication__error_password">11</span>
 
                 <button className="authentication__submit-btn">Зарегистрироваться</button>

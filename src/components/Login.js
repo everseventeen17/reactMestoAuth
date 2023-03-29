@@ -24,12 +24,12 @@ export function Login({handleLogin}) {
             <form onSubmit={handleSubmit} className="authentication__form authentication__form_registration"
                   name="registration" method="post">
 
-                <input onChange={handleInputEmail}
+                <input onChange={handleInputEmail} value={email || ''}
                     className="authentication__input-text authentication__input-text_email"
                     placeholder="Email" name="email"></input>
                 <span className="authentication__error authentication__error_email">11</span>
 
-                <input onChange={handleInputPassword}
+                <input onChange={handleInputPassword} value={password || ''}
                     className="authentication__input-text authentication__input-text_password"
                     placeholder="Пароль" type="password" name="password" autoComplete="off" ></input>
                 <span className="authentication__error authentication__error_password">11</span>
