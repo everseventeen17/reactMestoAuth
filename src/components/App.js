@@ -40,7 +40,7 @@ function App() {
 
     const navigate = useNavigate();
     const [isAuthorized, setIsAuthorized] = React.useState(false);
-    const [emailName, setEmailName] = React.useState(null);
+    const [email, setEmail] = React.useState(null);
 
     const [currentUser, setCurrentUser] = React.useState({
         name: '',
@@ -180,7 +180,7 @@ function App() {
         setIsInfoTooltipPopupOpen(true);
     }
 
-    function onRegister({email, password}) {
+    function handleRegistration({email, password}) {
         auth.postRegister({email, password})
             .then(() => {
                 setInfoTooltipImage(successImg);
@@ -194,12 +194,12 @@ function App() {
         );
     }
 
-    function onLogin({email, password}) {
+    function handleLogin({email, password}) {
         auth.postAuth({email, password})
             .then((data) => {
                 localStorage.setItem("jwt", data.token);
                 setIsAuthorized(true);
-                setEmailName(email);
+                setEmail(email);
                 navigate("/");
             }).catch(() => {
             setInfoTooltipImage(failureImg);
@@ -217,7 +217,7 @@ function App() {
                 .then((data) => {
                     if (data) {
                         setIsAuthorized(true);
-                        setEmailName(data.data.email);
+                        setEmail(data.data.email);
                     }
                 }).catch((err) => {
                 console.error(err);
@@ -233,7 +233,7 @@ function App() {
 
     function onSignOut() {
         setIsAuthorized(false);
-        setEmailName(null);
+        setEmail(null);
         navigate("/sign-in");
         localStorage.removeItem("jwt");
     }
@@ -246,20 +246,20 @@ function App() {
                 <Route path="/sign-in" element={
                     <>
                         <Header title="Регистрация" route="/sign-up"/>
-                        <Login onLogin={onLogin}/>
+                        <Login handleLogin={handleLogin}/>
                     </>
                 }/>
 
                 <Route path="/sign-up" element={
                     <>
                         <Header title="Войти" route="/sign-in"/>
-                        <Register onRegister={onRegister}/>
+                        <Register handleRegistration={handleRegistration}/>
                     </>
                 }/>
 
                 <Route exact path="/" element={
                     <>
-                        <Header title="Выйти" mail={emailName} onClick={onSignOut}/>
+                        <Header title="Выйти" email={email} onClick={onSignOut}/>
                         <ProtectedRoute
                             element={Main}
                             isAuthorized={isAuthorized}

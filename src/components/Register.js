@@ -1,22 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export function Register (props) {
+export function Register ({handleRegistration}) {
     const [password, setPassword] = React.useState('');
     const [email, setEmail] = React.useState('');
 
 
-    function handleChangePassword(e) {
+    function handleInputPassword(e) {
         setPassword(e.target.value);
     }
 
-    function handleChangeEmail(e) {
+    function handleInputEmail(e) {
         setEmail(e.target.value);
     }
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.onRegister({email, password});
+        handleRegistration({email, password});
     }
     return (
         <div className="authentication">
@@ -25,11 +25,11 @@ export function Register (props) {
             name="registration" method="post" onSubmit={handleSubmit}>
 
                 <input className="authentication__input-text authentication__input-text_email"
-                       onChange={handleChangeEmail} name="email" placeholder="Email" required></input>
+                       onChange={handleInputEmail} name="email" placeholder="Email" required></input>
                 <span className="authentication__error authentication__error_email">11</span>
 
                 <input className="authentication__input-text authentication__input-text_password" autoComplete="off"
-                       onChange={handleChangePassword} name="password" type="password" placeholder="Пароль" required></input>
+                       onChange={handleInputPassword} name="password" type="password" placeholder="Пароль" required></input>
                 <span className="authentication__error authentication__error_password">11</span>
 
                 <button className="authentication__submit-btn">Зарегистрироваться</button>

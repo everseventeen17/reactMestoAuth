@@ -1,21 +1,21 @@
 import React from 'react';
 
-export function Login(props) {
+export function Login({handleLogin}) {
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
 
 
-    function handleChangePassword(e) {
+    function handleInputPassword(e) {
         setPassword(e.target.value);
     }
 
-    function handleChangeEmail(e) {
+    function handleInputEmail(e) {
         setEmail(e.target.value);
     }
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.onLogin({email, password});
+        handleLogin({email, password});
     }
 
     return (
@@ -24,12 +24,12 @@ export function Login(props) {
             <form onSubmit={handleSubmit} className="authentication__form authentication__form_registration"
                   name="registration" method="post">
 
-                <input onChange={handleChangeEmail}
+                <input onChange={handleInputEmail}
                     className="authentication__input-text authentication__input-text_email"
                     placeholder="Email" name="email"></input>
                 <span className="authentication__error authentication__error_email">11</span>
 
-                <input onChange={handleChangePassword}
+                <input onChange={handleInputPassword}
                     className="authentication__input-text authentication__input-text_password"
                     placeholder="Пароль" type="password" name="password" autoComplete="off" ></input>
                 <span className="authentication__error authentication__error_password">11</span>
