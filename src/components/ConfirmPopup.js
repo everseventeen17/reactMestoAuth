@@ -1,10 +1,10 @@
 import PopupWithForm from "./PopupWithForm";
 
-function ConfirmPopup (props) {
+function ConfirmPopup ({onDeleteCard, onClose, isOpen}) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.onDeleteCard();
+    onDeleteCard();
   }
 
   return(
@@ -12,8 +12,8 @@ function ConfirmPopup (props) {
       title="Вы уверены?"
       name="confirm"
       buttonText="Да"
-      isOpen={props.isOpen}
-      onClose={props.onClose}
+      isOpen={isOpen}
+      onClose={onClose}
       onSubmit={handleSubmit}
     />
   )

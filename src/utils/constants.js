@@ -6,3 +6,10 @@ export const apiData = {
     'Content-Type': 'application/json'
   }
 }
+
+export const apiUserData = {
+  link: 'https://auth.nomoreparties.co/',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+}

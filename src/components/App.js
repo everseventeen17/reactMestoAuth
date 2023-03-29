@@ -231,7 +231,7 @@ function App() {
         }
     }, [isAuthorized, navigate]);
 
-    function onSignOut() {
+    function signOut() {
         setIsAuthorized(false);
         setEmail(null);
         navigate("/sign-in");
@@ -257,9 +257,9 @@ function App() {
                     </>
                 }/>
 
-                <Route exact path="/" element={
+                <Route path="/" element={
                     <>
-                        <Header title="Выйти" email={email} onClick={onSignOut}/>
+                        <Header title="Выйти" email={email} signOut={signOut}/>
                         <ProtectedRoute
                             element={Main}
                             isAuthorized={isAuthorized}
@@ -269,7 +269,7 @@ function App() {
                             onCardClick={handleCardClick}
                             cards={cards}
                             onCardLike={handleCardLike}
-                            onCardDelete={handleCardDelete}
+                            onCardDelete={handleConfirmPopupOpen}
                         />
                         <Footer/>
                     </>

@@ -1,6 +1,5 @@
-
-export function InfoTooltip ({isOpen, onClose, title, image}) {
-    return(
+export function InfoTooltip({isOpen, onClose, title, image}) {
+    return (
         <div className={`popup ${isOpen ? `popup_opened` : ''}`}>
             <div className="popup__container">
 

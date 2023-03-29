@@ -2,7 +2,7 @@ import logo from '../images/header/logo.svg';
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Header({route, email, onClick, title }) {
+function Header({route, email, signOut, title }) {
 
     return (
         <header className="header">
@@ -10,7 +10,7 @@ function Header({route, email, onClick, title }) {
 
             <nav className="header__authentication">
                 <p className="header__user-email">{email}</p>
-                <Link to={route} className="header__link" type="button" onClick={onClick}>
+                <Link to={route} className="header__link" type="button" onClick={signOut}>
                     {title}
                 </Link>
             </nav>
